@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <header class ="header">
+        <h1 class ="logo"><a href = "index.html"><img src="images/logo.png" alt="ロゴ"></a></h1>
+        <nav class ="nav">
+            <ul>    
+                <li><a href = "index.html">ホーム</a></li>
+                <li><a href = "about.html">店舗案内</a></li>
+                <li><a href = "access.html">アクセス</a></li>
+                <li><a href = "menu.html">メニュー</a></li>
+                <li><a href = "contact.html">お問い合わせ</a></li>                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class  = "keyvisual">
+        <h2>お問い合わせ</h2>
+    </div>
+    <main>
+<form action="https://formsubmit.co/g06052@ktc.ac.jp" method="POST">
+
+  <label for="kinds">お問い合わせの種類</label>
+  <br>
+  <select name="kinds" id="kinds">
+    <option value="">選択してください</option>
+    <option value="goyoyaku">ご予約</option>
+    <option value="black★Rockshooter">ブラックロックシューター</option>
+    <option value="where">どこへ行ったの</option>
+    <option value="listen">聞こえますか？</option>
+  </select>
+
+  <hr style="border: none; border-top: 2px dotted #333;">
+
+  <p>KUJIRAカフェにご来店いただいたことはありますか？:</p>
+  <input type="radio" name="rireki" id="yes" value="yes">
+  <label for="yes">はい</label>
+
+  <input type="radio" name="rireki" id="no" value="no">
+  <label for="no">いいえ</label>
+
+  <hr style="border: none; border-top: 2px dotted #333;">
+
+  <p>当カフェをお知りになったきっかけは？</p>
+  <input type="checkbox" name="kikkake[]" id="syoukai" value="syoukai">
+  <label for="syoukai">知り合いの紹介で</label>
+  
+  <input type="checkbox" name="kikkake[]" id="mita" value="mita">
+  <label for="mita">雑誌・webサイトで見て</label>
+
+  <p>お問い合わせの具体的な内容</p>
+  <textarea name="message" rows="5" cols="40" placeholder="自由に入力してください"></textarea>
+
+  <div style="margin-top: 20px;">
+    <button type="submit">送信する</button>
+  </div>
+
+</form>
+
+
+    </main>
+        <div class  = "keyvisual">
+            </div>
+    </div>
+    <footer class = "footer">
+        <p>&copy; Copyright: KUJIRA Cafe ALL rights reserved</p>
+    </footer>
+</body>
+</html>
